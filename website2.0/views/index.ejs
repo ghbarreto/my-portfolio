@@ -1,0 +1,139 @@
+<%- include("partials/header") %>
+   <div class="container">
+        <div class="subContainer"> <img class="myPic" src="/img/me.png">
+            <div class="paraWrap">
+                <h1 class="title">About ME</h1>
+                <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+                <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+            </div>
+        </div>
+   </div>
+
+   <div class="container">
+        <div class="subContainer">
+            <div class="paraWrap">
+
+                <h1 class="title">my work</h1>
+                <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+            </div>
+        </div>
+    </div>
+
+<% if(typeof dataA[0] === "undefined") { %>
+    
+    <div class="container">
+            <div class="subContainer"> <img class="myGame" src="/img/game.png">
+                <div class="paraWrap">            
+                    <h1 class="title">Game</h1>
+                    <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+                </div>
+                <div class="descriptionButtons">
+                    <button class="buttons learnProject" onclick="changeIcon(this)"> <i class="icon fa fa-plus"></i> Learn more</button>
+                    <button class="buttons buttonPreview">Preview</button>
+                </div>
+                <p class="description"><span class="textDesc">Learn more about this :D</span></p>
+            </div>
+         
+        </div>
+    
+        <div class="container">
+            <div class="subContainer"> <img class="myGame" src="/img/onlineStore.png">
+                <div class="paraWrap">
+                    <h1 class="title">Online Store</h1>
+                    <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+                </div>
+                <div class="descriptionButtons">
+                    <button class="buttons learnProject" onclick="changeIcon(this)" > <i class="icon fa fa-plus"></i> Learn more</button>
+                    <button class="buttons buttonPreview">Preview</button>
+                </div>
+                <p class="description"><span class="textDesc">Learn more about this :D</span></p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="subContainer"> 
+                <img class="myGame" src="/img/travelAgency.png">
+                    <h1 class="title">Travel Agency</h1>
+                    <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+                <div class="descriptionButtons">
+                    <button class="buttons learnProject" onclick="changeIcon(this)"><i class="icon fa fa-plus"></i>Learn more</button>
+                    <button class="buttons buttonPreview">Preview</button>
+            </div> 
+    
+                <p class="description"><span class="textDesc">Learn more about this :D</span></p>
+           
+           </div> 
+        </div>
+    <% } else { %> 
+
+        <div class="container">
+                <div class="subContainer"> 
+                        <h1 class="title">GitHub!</h1>
+                        <div class="row">
+                                <img class="gitHubImg" src="<%= dataA[0].owner.avatar_url %>"> <br>
+                                <h4 class="gitHubInfo">Name: <%= dataB.name %></h4>
+                                <div class="gitHubInfoDisplay">
+                                    <p class="gitHubInfo">Followers: <%= dataB.followers %> </p>
+                                    <p class="gitHubInfo">Following: <%= dataB.following %></p>
+                                    <p class="gitHubInfo">Public Repos: <%= dataB.followers %></p>
+                                    <p class="gitHubInfo">Bio: <%= dataB.bio %> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<% for(let i = 0; i < dataA.length; i++){ %>
+    <main>
+        <section class="grid cardsA">
+            <div class="cardsB"> 
+                <div class="card_image-container">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png">
+                    </div>
+                        <div class="card_content">
+                            
+                            <p> <a class="card_title text--medium"><%= dataA[i].name %></a> </p> 
+                        </div>
+                        <div class="card_content">
+                            <p class="text--title"><%= dataA[i].description %></p>
+                        </div>
+                        <div class="card_info">
+                            <p class="text--medium"><strong>Language: </strong><%= dataA[i].language %> </p>
+                            <p class="text--medium"><strong>Role: </strong><%= dataA[i].default_branch %></p>
+                            <p class="text--medium text-info "><a href="<%= dataA[i].html_url %>" class="">Visit Repo</a></p>
+                        </div>
+            </div> 
+        </section>
+    </main>
+
+        
+
+    <% } %>
+<% } %> 
+    
+
+
+
+            <!-- 
+                FORM
+
+
+             -->
+    <div class="container">
+        <div class="subContainer"> 
+            <h1 class="title">Contact Me!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
+            <form class="myContactForm">
+                <ul class="myForm">
+                    <div class="marginTop"></div>
+                    <li><label class="labels">Full Name <span class="red">*</span></label></li>
+                    <li><input class="namesForm shadow" placeholder="First Name" required> 
+                        <input class="namesForm shadow" placeholder="Last Name" required></li>
+                    <li><label class="labels">Email <span class="red">*</span></label></li>
+                    <li><input class="emailForm shadow" placeholder="Your Email" required></li>
+                    <li><label class="labels">Your Message <span class="red">*</span></label></li>
+                    <li><textarea rows="8" cols="50" class="shadow" required></textarea></li>
+                    <li><input type="submit" class="buttons"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+<%- include("partials/footer") %>
