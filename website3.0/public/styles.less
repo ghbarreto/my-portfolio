@@ -103,7 +103,7 @@ a.navSections{
 
 // CONTAINERS
 
-.container{
+.containerA{
     background-size: cover;
     background-position: center;
     margin: 20px 20px 0 0;  
@@ -120,25 +120,24 @@ a.navSections{
 }
 
 
-.container .title{
-    padding-top: 50px;
+.title{
+    padding-top: 50px; 
     font-size: 50px;
     font-weight: bold;
     color: @color-highlight;
     text-align: center;
-    margin: 0 auto;  
+    margin: 0 auto ;  
 }
 
-.container p{
-    padding: 20px;
+.technologies{
+    color: @color-body;
+}
+
+p{
     font-family: @paragraphs;
     letter-spacing: 1px;
     line-height: 25px;
-
-}
-
-.container p {
-    padding-top: 50px;
+    font-weight: 100;
 }
 
 .myPic{
@@ -159,7 +158,7 @@ a.navSections{
 }
 .subContainer{
     overflow: auto;
-    height: 100vh;
+    // height: 100vh;
     
     background-color: white;
 
@@ -167,6 +166,12 @@ a.navSections{
 .paraWrap{
     width: 80%;
     margin-left: 100px;
+}
+.iconsTech{
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 // BUTTONS
@@ -547,14 +552,14 @@ main {
     transform: translateY(-7px);
 }
 
-.card_image-container {
+.card_image-containers {
     width: 100%;
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
 }
 
-.card_image-container img {
+.card_image-containers img {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -612,9 +617,8 @@ main {
         grid-column-end: span 6;
     }
 }
-.containerPortfolio{
+.containerAPortfolio{
     background-color: rgb(249, 249, 249);
-    height: 70vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -627,13 +631,15 @@ main {
     float: right;
     // margin-right: 30px;
      width: 40%;
+     margin-right: 100px;
 }
 .portfolioDescription{
     margin-top: 60px;
 }
 .portfolioImage{
-    height: 100%;
-    width: 100%;
+    height: 40vw;
+    width: 40vw;
+    flex: wrap;
     margin-top: 30px;
 }
 .inline-block{
