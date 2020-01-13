@@ -5,7 +5,7 @@
 @color-buttons: white;
 @color-highlight: #F64C72;
 @title: 'Open Sans', sans-serif;
-@paragraphs: 'Open Sans', sans-serif;
+@paragraphs: 'Montserrat', sans-serif;
 /*
 COLORS: 
 #242582 (BACKGROUND)
@@ -15,7 +15,6 @@ COLORS:
 // SETUP
 
 * {
-    font-family: @paragraphs;
     margin: 0px;
     padding: 0px;
     z-index: 0;
@@ -29,12 +28,11 @@ ul li{
 // H1,H2,H3
 h1,h2,h3{
     text-transform: uppercase;
-}
-h1{
     opacity: 0.8;
     font-size: 180%;
     word-spacing: 5px;
     letter-spacing: 1px; 
+    font-family: @title;
 }
 
 a{
@@ -111,12 +109,25 @@ a.navSections{
 
 }
 
-.myDescriptionParagraphs {
-    // width: 50%;
-    font-size: 15px;
+.titleDescription {
+    font-size: 1.5em;
+    padding: 50px;
     text-align: center;
-    // margin
+    color: black;
+    font-family: @title;
+    letter-spacing: 5px;
+}
 
+.thickHifen{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.myDescriptionParagraphs{
+    font-size: 17px;
+    padding: 5px;
+    text-align: initial;
+    color: rgb(145, 145, 145);
+    font-family: @paragraphs;
 }
 
 
@@ -134,7 +145,6 @@ a.navSections{
 }
 
 p{
-    font-family: @paragraphs;
     letter-spacing: 1px;
     line-height: 25px;
     font-weight: 100;
@@ -251,10 +261,12 @@ p{
 }
 
 .inline-anim{
-    transform: translateY(3em) ;
-    transition: transform 4s .25s cubic-bezier(0, 1, .3, 1),
-                opacity .3s .25s ease-out;
+    transform: translateY(5em) ;
+    animation: bubble 3s forwards;
+    transition: transform 2s .25s cubic-bezier(0, 1, .3, 1),
+                opacity .3s .25s;
     will-change: transform, opacity;
+    
 }
 
 .is-visible{

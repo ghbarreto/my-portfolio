@@ -1,3 +1,5 @@
+// Animations
+
 $(document).ready(function(){
     $('.description').hide();
     $(function() {
@@ -8,7 +10,6 @@ $(document).ready(function(){
     })
 });
 
-// Animations
 
 function isElementInViewport(el){
     if(typeof jQuery === "function" && el instanceof jQuery){
@@ -36,10 +37,8 @@ function loop(){
         if(isElementInViewport(element)){
             element.classList.add('is-visible');
         }else{
-            element.classList.remove('is-visible');
         }
     });
     scroll(loop);
 }
 loop();
-

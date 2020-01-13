@@ -12,7 +12,6 @@ COLORS:
 
 */
 * {
-  font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
   z-index: 0;
@@ -26,12 +25,11 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
-}
-h1 {
   opacity: 0.8;
   font-size: 180%;
   word-spacing: 5px;
   letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -93,9 +91,24 @@ a.navSections {
   margin: 20px 20px 0 0;
   overflow: auto;
 }
-.myDescriptionParagraphs {
-  font-size: 15px;
+.titleDescription {
+  font-size: 1.5em;
+  padding: 50px;
   text-align: center;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 5px;
+}
+.thickHifen {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.myDescriptionParagraphs {
+  font-size: 17px;
+  padding: 5px;
+  text-align: initial;
+  color: #919191;
+  font-family: 'Montserrat', sans-serif;
 }
 .title {
   padding-top: 50px;
@@ -109,7 +122,6 @@ a.navSections {
   color: #242582;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   line-height: 25px;
   font-weight: 100;
@@ -210,8 +222,9 @@ p {
   animation: devTypeWriter 5s steps(30, end) 0s infinite, blinkTextCursor 700ms steps(44) infinite;
 }
 .inline-anim {
-  transform: translateY(3em);
-  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+  transform: translateY(5em);
+  animation: bubble 3s forwards;
+  transition: transform 2s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s;
   will-change: transform, opacity;
 }
 .is-visible {
@@ -284,7 +297,7 @@ p {
   background-color: #fbfdfd;
   width: 60%;
   border-radius: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .description .textDesc {
   display: flex;
