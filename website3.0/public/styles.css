@@ -298,6 +298,7 @@ a.navSections {
 }
 .learnProject {
   text-transform: uppercase;
+  margin-top: 30px;
 }
 .descriptionButtons {
   display: flex;
@@ -523,6 +524,29 @@ main {
     grid-column-end: span 6;
   }
 }
-.grid-portfolio {
-  display: grid;
+.containerPortfolio {
+  background-color: #f9f9f9;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ptImg {
+  margin-left: 40px;
+  float: left;
+  width: 40%;
+}
+.portfolioContents {
+  float: right;
+  width: 40%;
+}
+.portfolioDescription {
+  margin-top: 60px;
+}
+.portfolioImage {
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+}
+.inline-block {
+  margin-top: 40px;
 }
