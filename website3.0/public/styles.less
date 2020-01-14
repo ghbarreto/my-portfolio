@@ -25,6 +25,10 @@ ul li{
     text-decoration: none;
     list-style: none;
 }
+.tblL{
+    width: 80%;
+    margin: 0 auto;
+}
 // H1,H2,H3
 h1,h2,h3{
     text-transform: uppercase;
@@ -76,6 +80,7 @@ nav#navbar{
 .red{
     color:red;
 }
+
 
 a.navSections{
     color: @color-buttons;
@@ -179,6 +184,10 @@ p{
 }
 .iconsTech{
     opacity: 0.8;
+    margin-top: 30px;
+    margin: 30px;
+    max-height: 50px;
+    max-width: 50px;
     &:hover{
         opacity: 1;
     }
@@ -262,6 +271,7 @@ p{
 
 .inline-anim{
     transform: translateY(5em) ;
+    opacity: 0.1;
     animation: bubble 3s forwards;
     transition: transform 2s .25s cubic-bezier(0, 1, .3, 1),
                 opacity .3s .25s;
@@ -315,12 +325,10 @@ p{
 }
 
 .portfolioButton{
-    position: absolute;
+    text-align: center;
     font-size: 18px;
     padding-top: 80px;
-    padding-left: 42%;
     height: 100px;
-    margin: 0 auto;
 }
 
 // PROJECT DESCRIPTIONS
@@ -507,27 +515,36 @@ span#copyright{
 .imgGitHub{
     width: 15%;
 }
-// .underContainer{
-//     float: left;
-//     width: 25%;
-//     padding: 0 10px;
-// }
 
-// CARD
+.containerAPortfolio{
+    background-color: rgb(249, 249, 249);
+    margin-left: auto;
+    margin-right: auto;
+}
+.ptImg{
+    margin-left: 40px;
+    float: left;
+    width: 40%;
+}
+.portfolioContents{
+    float: right;
+    // margin-right: 30px;
+     width: 40%;
+     margin-right: 100px;
+}
+.portfolioDescription{
+    margin-top: 60px;
+}
+.portfolioImage{
+    height: 40vw;
+    width: 40vw;
+    flex: wrap;
+    margin-top: 30px;
+}
+.inline-block{
+    margin-top: 40px;
+}
 
-// .card {
-//     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-//     transition: 0.3s;
-//     width: 40%;
-//   }
-  
-//   .card:hover {
-//     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-//   }
-  
-//   .cardContainer {
-//     padding: 2px 16px;
-//   }
 
 main {
     display: grid;
@@ -614,6 +631,81 @@ main {
     .cardsA{
         grid-column-end: span 12;
     }
+
+    .tblL{
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+
+    .titleDescription{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: -20px;
+    }
+    
+    #navbar{
+        margin-bottom: 30px;
+    }
+    .grid-container{
+        grid-template-columns: 30% 60% 10%;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .iconsTech{
+        margin: 15px;
+        margin-top: 40px;
+        max-height: 30px;
+        max-width: 60px;
+    }
+    .navSections{
+        grid-column-start: 2;
+
+    }
+    .myContactForm{
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    .myForm{
+        width: 100%;
+        height: 100%;
+    }
+    .headerButtons{
+        display: none;
+    }
+
+    img{
+        width: 70%;
+        height: 70%;
+    }
+    .myPic{
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    .paraWrap{
+        margin-left: 30px;
+    }
+
+    .buttons{
+        width: 100px;
+        margin-top: -20px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -628,32 +720,4 @@ main {
     .cardsB{
         grid-column-end: span 6;
     }
-}
-.containerAPortfolio{
-    background-color: rgb(249, 249, 249);
-    margin-left: auto;
-    margin-right: auto;
-}
-.ptImg{
-    margin-left: 40px;
-    float: left;
-    width: 40%;
-}
-.portfolioContents{
-    float: right;
-    // margin-right: 30px;
-     width: 40%;
-     margin-right: 100px;
-}
-.portfolioDescription{
-    margin-top: 60px;
-}
-.portfolioImage{
-    height: 40vw;
-    width: 40vw;
-    flex: wrap;
-    margin-top: 30px;
-}
-.inline-block{
-    margin-top: 40px;
 }

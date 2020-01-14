@@ -6,29 +6,44 @@ const   express     = require('express'),
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
+let options = {
+    url: 'https://api.github.com/users/ghbarreto/repos', 
+    headers: {
+        'User-Agent': 'request'
+    }
+};
 
-
-// app.get('/', (req, res) => {
-//     request(options, (error, response, body) => {
-//         if(!error && response.statusCode == 200){
-//             let information = JSON.parse(body);
-//             // console.log(information);
-//             res.render('index', {data: information});
-//         }else{
-//             console.log(error);
-//         }
-//     });
-// });
+let optionsB = {
+    url: 'https://api.github.com/users/ghbarreto', 
+    headers: {
+        'User-Agent': 'request'
+    }
+};
 app.get('/', (req, res) => {
-    res.render('index');
+    let finishCount = 2;
+    let dataA, dataB;
+    
+    const done = () =>{
+        if(--finishCount){
+            return;
+        }
+        res.render('index', {dataA, dataB});
+    }
+    request(options, (err, response, body) => {
+        let info = JSON.parse(body);
+        dataA = info;
+        console.log("DATA A : "+info[0]);
+        done();
+    })
+    
+    request(optionsB, (err, response, body) => {
+        let info = JSON.parse(body);
+        dataB = info;
+        done();
+    });
+
 })
 
 app.listen(PORT, () => {
     console.log('Server listening on port: ' + PORT);
 })
-
-
-
-
-// <%- include("partials/header") %>
-

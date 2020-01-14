@@ -1,10 +1,7 @@
 <%- include("partials/header") %>
-  
-            <!-- 
-                FORM
+ 
+                     
 
-
-             -->
 
 <div class="containerA inline-anim Anim">
     <div class="subContainer"> 
@@ -24,23 +21,56 @@
 
 <%- include("partials/portfolio") %>
 
-<div class="containerA">
+
+<% if(typeof dataA[0] === "undefined") { %>
+    <div></div>
+<% } else { %> 
+<div class="table-responsive-lg tblL">
+                <table class="table table-striped btn-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Language</th>
+                            <th>Role</th>
+                            <th>Visit</th>
+                        </tr>
+                    </thead>
+                    <% for(let i = 0; i < dataA.length; i++){ %>
+                        <tbody>
+                            <tr>
+                                <td><%= i+1 %></td>
+                                <td><%= dataA[i].name %></td>
+                                <td><%= dataA[i].language %></td>
+                                <td><%= dataA[i].default_branch %></td>
+                                <td><a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="<%= dataA[i].html_url %>">Visit Repo</a></td>
+                            </tr>
+                    <% } %>
+<% } %> 
+                        </tbody>
+                    </table>   
+                </div>
+
+<div class="containerA inline-anim Anim">
     <div class="subContainer"> 
         <h1 class="title">Contact Me!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p>
-        <form class="myContactForm">
-            <ul class="myForm">
-                <div class="marginTop"></div>
-                <li><label class="labels">Full Name <span class="red">*</span></label></li>
-                <li><input class="namesForm shadow" placeholder="First Name" required> 
+        <div class="form">
+            <form class="myContactForm">
+                <ul class="myForm">
+                    <div class="marginTop"></div>
+                    <li><label class="labels">Full Name <span class="red">*</span></label></li>
+                    <li><input class="namesForm shadow" placeholder="First Name" required> 
                     <input class="namesForm shadow" placeholder="Last Name" required></li>
-                <li><label class="labels">Email <span class="red">*</span></label></li>
-                <li><input class="emailForm shadow" placeholder="Your Email" required></li>
-                <li><label class="labels">Your Message <span class="red">*</span></label></li>
-                <li><textarea rows="8" cols="50" class="shadow" required></textarea></li>
-                <li><input type="submit" class="buttons"></li>
-            </ul>
-        </form>
+                    <li><label class="labels">Email <span class="red">*</span></label></li>
+                    <li><input class="emailForm shadow" placeholder="Your Email" required></li>
+                    <li><label class="labels">Your Message <span class="red">*</span></label></li>
+                    <li><textarea rows="8" cols="50" class="shadow" required></textarea></li>
+                    <li><input type="submit" class="buttons"></li>
+                </ul>
+            </form>
+    </div>
     </div>
 </div>
+        </div>
+    
 <%- include("partials/footer") %>
