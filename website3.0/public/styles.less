@@ -173,14 +173,12 @@ p{
 }
 .subContainer{
     overflow: auto;
-    // height: 100vh;
-    
     background-color: white;
 
 }
 .paraWrap{
     width: 80%;
-    margin-left: 100px;
+    margin: 0 auto;
 }
 .iconsTech{
     opacity: 0.8;
@@ -425,96 +423,10 @@ input.emailForm{
     font-size: 16px;
 }
 
-// FOOTER
-footer {
-    bottom: 0;
-    left: 0;
-    height: 8%;
-    width: 100%;
-    background-color: @color-body;
-    color: white;
-    text-align: center;
-}
-footer .fa {
-    padding: 5px;
-    font-size: 18px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-#footerGrid{
-    display: grid;
-    grid-template-columns: 500fr 50fr 50fr 50fr 500fr;
-    display: center;
-}
-
-.fa-linkedin {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    color: white;
-    &:hover{
-        color: @color-highlight;
-    }
-}
-
-footer .fa-github {
-    .fa-linkedin;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-footer .fa-instagram{
-    .fa-linkedin;
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-footer p {
-    margin-top: 12px;
-    
-}
-span#copyright{
-    color: rgb(158, 157, 157);
-    
-    
-}
-
-// Aditional contents.
-
 #additionalColours{
     color: rgb(240, 248, 246);
 }
 
-// GITHUB
-
-.projectContainer{
-    display:grid;
-    justify-content: initial;
-}
-
-.projectContainer:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-.gitHubImg{
-    float: right;
-    border-radius: 20px;
-}
-.gitHubInfo{
-    float: right;
-}
-.imgGitHub{
-    width: 15%;
-}
 
 .containerAPortfolio{
     background-color: rgb(249, 249, 249);
@@ -543,6 +455,28 @@ span#copyright{
 }
 .inline-block{
     margin-top: 40px;
+}
+
+footer{
+    background-color: @color-body;
+}
+
+footer p {
+    color: @color-highlight;
+    font-family: @paragraphs;
+}
+
+footer .row {
+    color: white;
+}
+
+footer a {
+    color: white;
+    .headerButtons;
+}
+
+body > footer > div.footer-copyright.text-center.py-3{
+    color: white;
 }
 
 

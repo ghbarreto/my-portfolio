@@ -152,7 +152,7 @@ p {
 }
 .paraWrap {
   width: 80%;
-  margin-left: 100px;
+  margin: 0 auto;
 }
 .iconsTech {
   opacity: 0.8;
@@ -379,89 +379,8 @@ input.emailForm {
   margin-top: 10px;
   font-size: 16px;
 }
-footer {
-  bottom: 0;
-  left: 0;
-  height: 8%;
-  width: 100%;
-  background-color: #242582;
-  color: white;
-  text-align: center;
-}
-footer .fa {
-  padding: 5px;
-  font-size: 18px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-#footerGrid {
-  display: grid;
-  grid-template-columns: 500fr 50fr 50fr 50fr 500fr;
-  display: center;
-}
-.fa-linkedin {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  color: white;
-}
-.fa-linkedin:hover {
-  color: #F64C72;
-}
-footer .fa-github {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  color: white;
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-footer .fa-github:hover {
-  color: #F64C72;
-}
-footer .fa-instagram {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  color: white;
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-footer .fa-instagram:hover {
-  color: #F64C72;
-}
-footer p {
-  margin-top: 12px;
-}
-span#copyright {
-  color: #9e9d9d;
-}
 #additionalColours {
   color: #f0f8f6;
-}
-.projectContainer {
-  display: grid;
-  justify-content: initial;
-}
-.projectContainer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-.gitHubImg {
-  float: right;
-  border-radius: 20px;
-}
-.gitHubInfo {
-  float: right;
-}
-.imgGitHub {
-  width: 15%;
 }
 .containerAPortfolio {
   background-color: #f9f9f9;
@@ -489,6 +408,24 @@ span#copyright {
 }
 .inline-block {
   margin-top: 40px;
+}
+footer {
+  background-color: #242582;
+}
+footer p {
+  color: #F64C72;
+  font-family: 'Montserrat', sans-serif;
+}
+footer .row {
+  color: white;
+}
+footer a {
+  color: white;
+  background-color: transparent;
+  border: transparent;
+}
+body > footer > div.footer-copyright.text-center.py-3 {
+  color: white;
 }
 main {
   display: grid;
