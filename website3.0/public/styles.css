@@ -332,16 +332,18 @@ p {
   margin-left: 30px;
 }
 .myContactForm {
-  display: flex;
-  justify-content: center;
-  padding: 80px;
   margin: 30px;
+  display: inline-block;
+}
+.forms {
+  text-align: center;
 }
 .myForm {
-  background-color: #f8f9fc;
-  width: 500px;
-  height: 500px;
+  background-color: #fcfcfc;
   border-radius: 10px;
+}
+textarea {
+  width: 50%;
 }
 .myForm li {
   margin-left: 20px;
@@ -350,6 +352,7 @@ p {
 input.namesForm {
   height: 30px;
   width: 43%;
+  max-width: 300px;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
   font-size: 16px;
@@ -368,6 +371,7 @@ textarea {
   padding: 5px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  max-width: 800px;
 }
 .marginTop {
   margin-top: 40px;
@@ -375,6 +379,7 @@ textarea {
 input.emailForm {
   height: 30px;
   width: 87%;
+  max-width: 600px;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
   font-size: 16px;
@@ -411,6 +416,7 @@ input.emailForm {
 }
 footer {
   background-color: #242582;
+  margin-top: 200px;
 }
 footer p {
   color: #F64C72;
@@ -487,6 +493,9 @@ main {
   padding: 5px 20px;
   background-color: #fbfdfd;
   border-radius: 20px;
+}
+.git {
+  margin: 60px;
 }
 @media only screen and (max-width: 1000px) {
   .cardsA {

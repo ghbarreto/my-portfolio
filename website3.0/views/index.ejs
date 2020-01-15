@@ -20,14 +20,13 @@
 </div>
 
 <%- include("partials/portfolio") %>
-
-
 <% if(typeof dataA[0] === "undefined") { %>
     <div></div>
 <% } else { %> 
+<h1 class="title git">GitHub Projects</h1>
 <div class="table-responsive-lg tblL">
-                <table class="table table-striped btn-table">
-                    <thead>
+                <table class="table table-striped btn-table table-hover">
+                    <thead class="thead-dark">
                         <tr>
                             <th>#</th>
                             <th>Name</th>
@@ -53,8 +52,8 @@
 
 <div class="inline-anim Anim">
     <div class="subContainer"> 
-        <h1 class="title">Contact Me!</h1>
-        <div class="form">
+        <h1 class="title git">Contact Me!</h1>
+        <div class="forms">
             <form class="myContactForm">
                 <ul class="myForm">
                     <div class="marginTop"></div>

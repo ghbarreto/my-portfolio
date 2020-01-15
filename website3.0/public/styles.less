@@ -371,27 +371,30 @@ p{
 // Contact Form
 
 .myContactForm{
-    display: flex;
-    justify-content: center;
-    padding: 80px;
-    margin: 30px;   
+    margin: 30px; 
+    display: inline-block;
+}
+.forms{
+    text-align: center;
 }
 
 .myForm{
-    background-color: rgb(248, 249, 252);
-    width: 500px;
-    height: 500px;
+    background-color: rgb(252, 252, 252);
     border-radius: 10px;
 }
 
+textarea{
+    width: 50%;
+}
+
 .myForm li {
-   
     margin-left: 20px;
     padding: 5px;
 }
 input.namesForm{
     height: 30px;
     width: 43%;
+    max-width: 300px;
     font-family: @font;
     margin-top: 10px;
     font-size: 16px;
@@ -410,6 +413,7 @@ textarea{
     padding: 5px;
     font-family: @font;
     font-size: 16px;
+    max-width: 800px;
 }
 .marginTop{
     margin-top: 40px;
@@ -418,6 +422,7 @@ textarea{
 input.emailForm{
     height: 30px;
     width: 87%;
+    max-width: 600px;
     font-family: @font;
     margin-top: 10px;
     font-size: 16px;
@@ -440,9 +445,8 @@ input.emailForm{
 }
 .portfolioContents{
     float: right;
-    // margin-right: 30px;
-     width: 40%;
-     margin-right: 100px;
+    width: 40%;
+    margin-right: 100px;
 }
 .portfolioDescription{
     margin-top: 60px;
@@ -459,6 +463,7 @@ input.emailForm{
 
 footer{
     background-color: @color-body;
+    margin-top: 200px;
 }
 
 footer p {
@@ -550,6 +555,10 @@ main {
     padding: 5px 20px;
     background-color: @color-website;
     border-radius: 20px;
+}
+
+.git{
+    margin: 60px;
 }
 
 @media only screen and (max-width: 1000px){
