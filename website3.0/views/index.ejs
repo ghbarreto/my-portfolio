@@ -1,23 +1,9 @@
 <%- include("partials/header") %>
- 
+<%- include("partials/about") %>
                      
 
 
-<div class="containerA inline-anim Anim">
-    <div class="subContainer"> 
-        <div class="paraWrap">
-            <img class="Anim myPic " src="/img/me.png">
-            <h3 class="titleDescription">Hi, I'm Gabriel <span class="thickHifen">-</span> a back-end developer</h3>
-            <p class="myDescriptionParagraphs">My name is Gabriel Valencia, I grew up in São Paulo, however I have always had the lust to travel the world.
-                The reason why I chose the name 'Valenciaga' is because it is a play on words with my real name.</p>
-            <p class="myDescriptionParagraphs">I have always had a huge interest in programming and computers, especially online games, I played endless hours with my friends
-                a game called Lineage II, when I turned 15 years old, I decided to open my own server of Lineage II and host it so my friends would be able to play a great game. 
-                In that server, I was able to pull <span style="font-weight: bold; font-style: italic;">200</span> concurrent players, and that was my greatest achievement at the age of 15.
-            </p>
-            <!-- <p class="myDescriptionParagraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mattis nulla, quis mattis enim. Nunc blandit, mi sit amet gravida faucibus, metus velit pulvinar risus, vel auctor velit risus id purus. Donec id diam condimentum, suscipit lectus nec, ullamcorper leo. Etiam in feugiat ante. In at fermentum lacus. Quisque venenatis enim et ipsum elementum pellentesque vitae ut nibh. Nullam mattis elit ut orci malesuada, id tempus odio euismod. Nam ut enim a risus tempor venenatis. Duis faucibus eget purus eu laoreet.</p> -->
-        </div>
-    </div>
-</div>
+
 
 <%- include("partials/portfolio") %>
 <% if(typeof dataA[0] === "undefined") { %>
@@ -50,26 +36,6 @@
                     </table>   
                 </div>
 
-<div class="inline-anim Anim">
-    <div class="subContainer"> 
-        <h1 class="title git">Contact Me!</h1>
-        <div class="forms">
-            <form class="myContactForm">
-                <ul class="myForm">
-                    <div class="marginTop"></div>
-                    <li><label class="labels">Full Name <span class="red">*</span></label></li>
-                    <li><input class="namesForm shadow" placeholder="First Name" required> 
-                    <input class="namesForm shadow" placeholder="Last Name" required></li>
-                    <li><label class="labels">Email <span class="red">*</span></label></li>
-                    <li><input class="emailForm shadow" placeholder="Your Email" required></li>
-                    <li><label class="labels">Your Message <span class="red">*</span></label></li>
-                    <li><textarea rows="8" cols="50" class="shadow" required></textarea></li>
-                    <li><input type="submit" class="buttons"></li>
-                </ul>
-            </form>
-    </div>
-    </div>
-</div>
-        </div>
-    
+
+<%- include("partials/contactForm") %>
 <%- include("partials/footer") %>
