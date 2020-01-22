@@ -1,0 +1,29 @@
+<% if(typeof dataA[0] === "undefined") { %>
+<div></div>
+<% } else { %> 
+<h1 class="title git">GitHub Projects</h1>
+<div class="table-responsive-lg tblL">
+    <table class="table table-striped btn-table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Language</th>
+                <th>Role</th>
+                <th>Visit</th>
+            </tr>
+        </thead>
+    <% for(let i = 0; i < dataA.length; i++){ %>
+        <tbody>
+            <tr>
+                <td><%= i+1 %></td>
+                <td><%= dataA[i].name %></td>
+                <td><%= dataA[i].language %></td>
+                <td><%= dataA[i].default_branch %></td>
+                <td><a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="<%= dataA[i].html_url %>">Visit Repo</a></td>
+            </tr>
+    <% } %>
+<% } %> 
+        </tbody>
+    </table>   
+</div>

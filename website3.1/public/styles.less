@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font: 'Open Sans', sans-serif;
+@color-body: #242582;
+@color-website: #fbfdfd;
+@color-buttons: white;
+@color-highlight: #F64C72;
+@title: 'Open Sans', sans-serif;
+@paragraphs: 'Montserrat', sans-serif;
+/*
+COLORS: 
+#242582 (BACKGROUND)
+#F64C72 (Hover)
+
+*/
+// SETUP
+
+* {
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+    box-sizing: border-box;
+
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.tblL{
+    width: 80%;
+    margin: 0 auto;
+}
+// H1,H2,H3
+h1,h2,h3{
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 180%;
+    word-spacing: 5px;
+    letter-spacing: 1px; 
+    font-family: @title;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    height: 50px;
+    width: 60px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    &:hover{
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+}
+// HEADERS
+#navbar a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 6px;
+    font-size: 18px;
+    height: 30px;    
+    transition: color 0.5s;
+    &:visited{
+        text-decoration: none !important;
+    }
+    &:hover{
+        font-weight: bold;
+        color: @color-highlight;
+        transition: color 0.5s;
+    }
+}
+#wrap{
+    background-color: @color-body;
+}
+nav#navbar{
+    height: 40px;
+}
+
+.red{
+    color:red;
+}
+
+
+a.navSections{
+    color: @color-buttons;
+    width: 70px;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 60% 12% 12% 12%;
+}
+
+#logo{
+    grid-column-start: 1;
+}
+
+// HEADER BUTTONS
+.headerButtons{
+    background-color: transparent;
+    border: transparent;
+}
+
+
+// CONTAINERS
+
+.containerA{
+    background-size: cover;
+    background-position: center;
+    margin: 20px 20px 0 0;  
+    overflow: auto;
+
+}
+
+.titleDescription {
+    font-size: 1.5em;
+    padding: 50px;
+    text-align: center;
+    color: black;
+    font-family: @title;
+    letter-spacing: 5px;
+}
+
+.thickHifen{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.myDescriptionParagraphs{
+    font-size: 17px;
+    padding: 5px;
+    text-align: initial;
+    color: rgb(145, 145, 145);
+    font-family: @paragraphs;
+}
+
+
+.title{
+    padding-top: 50px; 
+    font-size: 50px;
+    font-weight: bold;
+    color: @color-highlight;
+    text-align: center;
+    margin: 0 auto ;  
+}
+
+.technologies{
+    color: @color-body;
+}
+
+p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+.myPic{
+    float: right;
+    margin-left: 50px;
+    height: auto;
+    width: 400px;
+    padding-bottom: 30px;
+    clip-path: polygon(0 0, 30% 0, 110% 15vh, 0 210%);
+}
+.myGame{
+    float: left;
+    margin-left: 20px;
+    margin: 30px;
+    height: 220px;
+    width: 400px;
+    padding-bottom: 30px;
+}
+.subContainer{
+    overflow: auto;
+    background-color: white;
+
+}
+.paraWrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.iconsTech{
+    opacity: 0.8;
+    margin-top: 30px;
+    margin: 30px;
+    max-height: 50px;
+    max-width: 50px;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+// BUTTONS
+
+.btnBody:link,
+.btnBody:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btnBody-full:link,
+.btnBody-full:visited, .buttons{
+    background-color: #F64C72;
+    border: 1px solid #F64C72;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btnBody-ghost:link,
+.btnBody-ghost:visited, .buttons{
+    border:1px solid #F64C72;
+    font-weight: bold;
+    color: #F64C72;
+}
+
+.btnBody:hover,
+.btnBody:active{
+    background-color: #242582;
+}
+
+.btnBody-full:hover,
+.btnBody-full:active{
+    border:1px solid #242582;
+}
+
+.btnBody-ghost:hover,
+.btnBody-ghost:active, {
+    border:1px solid @color-highlight;
+    color: @color-highlight;
+}
+
+.buttons {
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buttonPreview{
+    color: @color-body;
+}
+
+.buttonsPreview{
+    border:1px solid @color-body;
+    font-weight: bold;
+    color: @color-body;
+}
+// ANIMATION
+.devBody{
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 22px;
+    color: white;
+    white-space:nowrap;
+    border-right: 2px solid rgba(221, 218, 15, 0.75);
+    overflow:hidden;
+    font-family: @title;
+    -webkit-animation: devTypeWriter 5s steps(30, end) 0s infinite,
+        blinkTextCursor 700ms steps(44) infinite;
+    animation: devTypeWriter 5s steps(30, end) 0s infinite,
+        blinkTextCursor 700ms steps(44) infinite;
+}
+
+.inline-anim{
+    transform: translateY(5em) ;
+    opacity: 0.1;
+    animation: bubble 3s;
+    transition: transform 2s .25s cubic-bezier(0, 1, .3, 1),
+                opacity .3s .25s;
+    will-change: transform, opacity;
+    
+}
+
+.is-visible{
+    opacity: 1;
+    transform: translateY(0em);
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: @color-highlight;}
+    to{border-right-color: transparent;}
+}
+
+@keyframes devTypeWriter{   
+    from { width: 0;}
+    37%{ width:6em;}
+    49%{ width:0; }
+    100%{ width:0; }
+}
+
+@-webkit-keyframes devTypeWriter{
+    from {width: 8;}
+    37%{width:0em;}
+    49%{width:0;}
+    100%{width:0;}
+}
+
+// BODY / ABOUT
+.bodyContainer{
+    background-image: linear-gradient(rgba(36, 37, 130), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.paddingSections{
+    padding: 50px;
+}
+#myGame{
+    height: 200px;
+}
+
+.h1Body{
+    font-size: 40px;
+    padding-top: 30vh;
+    padding-bottom: 10px;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: @color-highlight; 
+}
+
+.portfolioButton{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 80px;
+    height: 100px;
+}
+
+// PROJECT DESCRIPTIONS
+
+.description{
+    margin: 0 auto;
+    background-color: @color-website;
+    width: 60%;
+    border-radius: 30px;
+    font-family: @paragraphs;
+    // visibility: hidden;
+    
+}
+
+.description .textDesc{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    height: 30%;
+    width: 100%;
+    
+}
+
+
+
+@keyframes paragraph {
+    0% { left: -1500px; }
+    100% { left: 0; }
+}
+
+.learnProject{
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.descriptionButtons{
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-left: 30px;
+}
+
+// Contact Form
+
+.myContactForm{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.myForm{
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+}
+
+
+
+.myForm li {
+    margin-left: 20px;
+    padding: 5px;
+}
+input.namesForm{
+    height: 30px;
+    width: 43%;
+    max-width: 300px;
+    font-family: @font;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.labels{
+    font-weight: bold;
+    font-family: @font;
+}
+.shadow:focus {
+    outline: none !important;
+    border:1px solid @color-highlight;
+    box-shadow: 0 0 10px @color-body;
+}
+textarea{
+    padding: 5px;
+    font-family: @font;
+    font-size: 16px;
+    max-width: 800px;
+    width:90%;
+    
+}
+.marginTop{
+    margin-top: 40px;
+}
+
+input.emailForm{
+    height: 30px;
+    width: 87%;
+    max-width: 600px;
+    font-family: @font;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#additionalColours{
+    color: rgb(240, 248, 246);
+}
+
+
+.containerAPortfolio{
+    background-color: rgb(249, 249, 249);
+    margin-left: auto;
+    margin-right: auto;
+}
+.ptImg{
+    margin-left: 40px;
+    float: left;
+    width: 40%;
+}
+.portfolioContents{
+    float: right;
+    width: 40%;
+    margin-right: 100px;
+}
+.portfolioDescription{
+    margin-top: 60px;
+}
+.portfolioImage{
+    height: 40vw;
+    width: 40vw;
+    flex: wrap;
+    margin-top: 30px;
+}
+.inline-block{
+    margin-top: 40px;
+}
+
+footer{
+    background-color: @color-body;
+    margin-top: 200px;
+}
+
+footer p {
+    color: @color-highlight;
+    font-family: @paragraphs;
+}
+
+footer .row {
+    color: white;
+}
+
+footer a {
+    color: white;
+    .headerButtons;
+}
+
+body > footer > div.footer-copyright.text-center.py-3{
+    color: white;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.cardsA{
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+}
+
+.cardsB{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #39393b;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 8px;
+}
+.cardsB:hover{
+    transform: translateY(-7px);
+}
+
+.card_image-containers {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_image-containers img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card_title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card_info{
+    display: contents;
+    align-self: end;
+    align-items: center;
+}
+
+.text-info{
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: @color-website;
+    border-radius: 20px;
+}
+
+.git{
+    margin: 60px;
+}
+
+@media only screen and (max-width: 1000px){
+    .cardsA{
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    main{
+        grid-gap: 20px;
+    }
+    .cardsA{
+        grid-column-end: span 12;
+    }
+
+    .tblL{
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+
+    .titleDescription{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: -20px;
+    }
+    
+    #navbar{
+        margin-bottom: 30px;
+    }
+    .grid-container{
+        grid-template-columns: 30% 60% 10%;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .iconsTech{
+        margin: 15px;
+        margin-top: 40px;
+        max-height: 30px;
+        max-width: 60px;
+    }
+    .navSections{
+        grid-column-start: 2;
+
+    }
+    .myContactForm{
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    textarea{
+        width: 100%;
+    }
+    .headerButtons{
+        display: none;
+    }
+
+    div.forms{
+        display: block;
+        text-align: center;
+    }
+    .myContactForm
+    {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    img{
+        width: 70%;
+        height: 70%;
+    }
+    .myPic{
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    .paraWrap{
+        margin-left: 30px;
+    }
+
+    .buttons{
+        width: 100px;
+        margin-top: -20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px){
+    main{
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cardsA{
+        grid-column-end: span 6;
+    }
+
+    .cardsB{
+        grid-column-end: span 6;
+    }
+}

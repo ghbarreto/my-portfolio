@@ -1,0 +1,160 @@
+<span class="vue">
+    <section v-for="values in posts" class="my-5 paddingSections">
+        <h3 class="h3-responsive title text-center my-5 title" style="font-weight: 100;">{{ values.name }}</h3>
+        <p class="lead myDescriptionParagraphs text-center w-responsive mx-auto mb-5">{{ values.description }}</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center text-lg-left">
+                    <img class="img-thumbnail text-center rounded mx-auto d-block img-fluid" style="max-height: 400px; max-width:400px;" :src="values.image">
+                </div>
+                <div class="col-lg-7">
+                    <div class="row mb-3">
+                            <div class="col-1"></div>
+                            <div  class="col-xl-10 col-md-11 col-10 text-center">
+                            <span v-for="logo in values.logos" transition="fadeIn" mode="in-out">
+                                <img  v-if="show" class="img-responsive text-center iconsTech" :src="logo"></span>
+                            <div class="descriptionButtons"></div>
+                            <button class="buttons learnProject" :href="values.demo">demo</button>
+                            <button class="buttons buttonPreview" :href="values.src">src</button>
+                            </div>   
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</span>
+<section class="my-5 paddingSections">
+        <h3 class="h3-responsive title text-center my-5 title" style="font-weight: 100;">Travel Agency</h3>
+        <p class="lead myDescriptionParagraphs text-center w-responsive mx-auto mb-5">Game developed for a web programming class using javascript, this is my first program ever.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center text-lg-left">
+                    <img class="img-thumbnail text-center rounded mx-auto d-block img-fluid" style="max-height: 800px; max-width:400px;" src="/img/travelAgency.png">
+                </div>
+                <div class="col-lg-7">
+                    <div class="row mb-3">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-xl-10 col-md-11 col-10 text-center inline-anim Anim">
+                        <img class="img-responsive text-center iconsTech"  src="img/js.png" title="Javascript" alt="Javascript">
+                        <img class="img-responsive text-center iconsTech"  src="img/html.png" title="HTML" alt="html">
+                        <img class="img-responsive text-center iconsTech"  src="img/nodejs.png" title="NodeJS"alt="node">
+                        <img class="img-responsive text-center iconsTech"  src="img/jquery.png" title="jQuery"alt="jquery">
+                        <img class="img-responsive text-center iconsTech"  src="img/less.png" title="less"alt="less">
+                        <img class="img-responsive text-center iconsTech"  src="img/angular.png" title="Angular"alt="angular">
+                        <img class="img-responsive text-center iconsTech"  src="img/mongo.png" title="mongoDB"alt="mongo">
+                        <img class="img-responsive text-center iconsTech"  src="img/passport.png" title="Passport"alt="passport">
+                        <img class="img-responsive text-center iconsTech"  src="img/socket.png" title="socket.io"alt="socket">
+                        <img class="img-responsive text-center iconsTech"  src="img/express.png" title="express"alt="express">
+                        <img class="img-responsive text-center iconsTech"  src="img/rest.png" title="REST"alt="restt">
+                        <div class="descriptionButtons">
+                    </div>
+                        <button class="buttons learnProject" href="">demo</button>
+                        <button class="buttons buttonPreview" href="">src</button>
+                        </div>     
+                    </div>
+                       </div>
+            </div>
+        </div>
+</section>
+
+<!-- ------ -->
+<!-- <section class="my-5 paddingSections">
+    <h3 class="h3-responsive title text-center my-5 title" style="font-weight: 100;">Game</h3>
+    <p class="lead myDescriptionParagraphs text-center w-responsive mx-auto mb-5">Game developed for a web programming class using javascript, this is my first program ever.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 text-center text-lg-left">
+                <img class="img-thumbnail text-center rounded mx-auto d-block img-fluid" style="max-height: 400px; max-width:400px;" src="/img/game.png">
+            </div>
+            <div class="col-lg-7">
+                <div class="row mb-3">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-xl-10 col-md-11 col-10 text-center inline-anim Anim">
+                    <img class="img-responsive text-center iconsTech" src="img/js.png" alt="Javascript">
+                    <img class="img-responsive text-center iconsTech" src="img/html.png" alt="html">
+                    <img class="img-responsive text-center iconsTech" src="img/css.png" alt="css">
+                    <div class="descriptionButtons">
+                </div>
+                    <button class="buttons learnProject" href="">demo</button>
+                    <button class="buttons buttonPreview" href="">src</button>
+                    </div>     
+                </div>
+                   </div>
+        </div>
+    </div>
+</section>
+
+<div class="vue">
+    <p>{{ working }} </p>
+</div>
+
+<section class="my-5 paddingSections">
+        <h3 class="h3-responsive title text-center my-5 title" style="font-weight: 100;">Online Store</h3>
+        <p class="lead myDescriptionParagraphs text-center w-responsive mx-auto mb-5">Game developed for a web programming class using javascript, this is my first program ever.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center text-lg-left">
+                    <img class="img-thumbnail text-center rounded mx-auto d-block img-fluid" style="max-height: 800px; max-width:400px;" src="/img/onlineStore.png">
+                </div>
+                <div class="col-lg-7">
+                    <div class="row mb-3">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-xl-10 col-md-11 col-10 text-center inline-anim Anim">
+                        <img class="img-responsive text-center iconsTech" src="img/js.png" title="Javascript" alt="Javascript">
+                        <img class="img-responsive text-center iconsTech" src="img/html.png" title="HTML" alt="html">
+                        <img class="img-responsive text-center iconsTech" src="img/ajax.png" title="AJAX" alt="ajax">
+                        <img class="img-responsive text-center iconsTech" src="img/jquery.png" title="jQuery" alt="jquery">
+                        <img class="img-responsive text-center iconsTech" src="img/less.png" title="less" alt="less">
+                        <img class="img-responsive text-center iconsTech" src="img/php.png" title="php" alt="php">
+                        <img class="img-responsive text-center iconsTech" src="img/sql.png" title="MySQL" alt="sql">
+                        <img class="img-responsive text-center iconsTech" src="img/twig.jpg" title="TWIG" alt="twig">
+                        <img class="img-responsive text-center iconsTech" src="img/sf.png" title="Symfony" alt="sf">
+                        <div class="descriptionButtons">
+                    </div>
+                        <button class="buttons learnProject" href="">demo</button>
+                        <button class="buttons buttonPreview" href="">src</button>
+                        </div>     
+                    </div>
+                       </div>
+            </div>
+        </div>
+</section>
+
+
+<section class="my-5 paddingSections">
+        <h3 class="h3-responsive title text-center my-5 title" style="font-weight: 100;">Travel Agency</h3>
+        <p class="lead myDescriptionParagraphs text-center w-responsive mx-auto mb-5">Game developed for a web programming class using javascript, this is my first program ever.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center text-lg-left">
+                    <img class="img-thumbnail text-center rounded mx-auto d-block img-fluid" style="max-height: 800px; max-width:400px;" src="/img/travelAgency.png">
+                </div>
+                <div class="col-lg-7">
+                    <div class="row mb-3">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-xl-10 col-md-11 col-10 text-center inline-anim Anim">
+                        <img class="img-responsive text-center iconsTech"  src="img/js.png" title="Javascript" alt="Javascript">
+                        <img class="img-responsive text-center iconsTech"  src="img/html.png" title="HTML" alt="html">
+                        <img class="img-responsive text-center iconsTech"  src="img/nodejs.png" title="NodeJS"alt="node">
+                        <img class="img-responsive text-center iconsTech"  src="img/jquery.png" title="jQuery"alt="jquery">
+                        <img class="img-responsive text-center iconsTech"  src="img/less.png" title="less"alt="less">
+                        <img class="img-responsive text-center iconsTech"  src="img/angular.png" title="Angular"alt="angular">
+                        <img class="img-responsive text-center iconsTech"  src="img/mongo.png" title="mongoDB"alt="mongo">
+                        <img class="img-responsive text-center iconsTech"  src="img/passport.png" title="Passport"alt="passport">
+                        <img class="img-responsive text-center iconsTech"  src="img/socket.png" title="socket.io"alt="socket">
+                        <img class="img-responsive text-center iconsTech"  src="img/express.png" title="express"alt="express">
+                        <img class="img-responsive text-center iconsTech"  src="img/rest.png" title="REST"alt="restt">
+                        <div class="descriptionButtons">
+                    </div>
+                        <button class="buttons learnProject" href="">demo</button>
+                        <button class="buttons buttonPreview" href="">src</button>
+                        </div>     
+                    </div>
+                       </div>
+            </div>
+        </div>
+</section> -->
