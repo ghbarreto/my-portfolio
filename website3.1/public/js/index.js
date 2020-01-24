@@ -55,7 +55,7 @@ new Vue({
             {name: 'Game', description: 'Game developed for a web programming class using javascript, this is my first program ever.', 
             image: '/img/game.png', demo: '#', src: '#', logos: ['img/js.png', 'img/html.png', 'img/css.png']},
             
-            {name: 'Online Store', description: 'An Online Store', image: '/img/onlineStore.png', demo: '#', src: '#', 
+            {name: 'Online Store', description: 'An Online Store made', image: '/img/onlineStore.png', demo: '#', src: '#', 
             logos: ['img/js.png', 'img/html.png', 'img/css.png', 'img/ajax.php', 'img/jquery.png',
             'img/less.png', 'img/php.png', 'img/sql.png', 'img/twig.jpg', 'img/sf.png']},
 
@@ -65,8 +65,3 @@ new Vue({
     }
     
 })
-// name: 'Game', 
-//         description: 'Game developed for a web programming class using javascript, this is my first program ever.',
-//         image: '/img/game.png', 
-//         logos: {['img/js.png', 'img/html.png', 'img/css.png']},
-// ]
