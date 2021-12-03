@@ -1,7 +1,7 @@
 const express = require('express'),
   request = require('request'),
   app = express(),
-  PORT = 8000;
+  PORT = process.env.PORT || 8000;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
